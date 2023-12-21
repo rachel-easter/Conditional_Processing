@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Service and Tax Calculator</title>
+</head>
+<body>
+    <h1>Welcome to the Employee Service and Tax Calculator</h1>
+
+    <form id="employeeForm">
+        <label for="ageInput">Age:</label>
+        <input type="number" id="ageInput" required>
+        
+        <label for="sexInput">Sex (M or F):</label>
+        <input type="text" id="sexInput" pattern="[M|F]" required>
+        
+        <label for="maritalStatusInput">Marital Status (Y or N):</label>
+        <input type="text" id="maritalStatusInput" pattern="[Y|N]" required>
+        
+        <label for="grossSalaryInput">Gross Salary:</label>
+        <input type="number" id="grossSalaryInput" required>
+        
+        <label for="totalSavingsInput">Total Savings:</label>
+        <input type="number" id="totalSavingsInput" required>
+        
+        <button type="button" id="submitButton">Submit</button>
+        <div id="result"></div>
+    </form>
+
+    <script src="/dist/index.js"></script>
+</body>
+</html>
